@@ -1,0 +1,1 @@
+{"name": "mc-hosting-bot","version": "1.0.0","description": "A Discord bot for managing Minecraft hosting.","main": "index.js","scripts": {"start": "node index.js"},"dependencies": {"discord.js": "^14.0.0","dotenv": "^16.0.0"},"author": "theghoxt69-creator","license": "MIT"}
