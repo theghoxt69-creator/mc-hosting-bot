@@ -1,0 +1,1 @@
+{\n  "botToken": "YOUR_BOT_TOKEN_HERE",\n  "prefix": "!",\n  "ownerID": "YOUR_USER_ID_HERE",\n  "channels": {\n    "logChannel": "YOUR_LOG_CHANNEL_ID_HERE",\n    "welcomeChannel": "YOUR_WELCOME_CHANNEL_ID_HERE"\n  },\n  "settings": {\n    "language": "en",\n    "timezone": "UTC"\n  }\n}
