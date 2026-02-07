@@ -1,0 +1,1 @@
+# mc-hosting-bot
