@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+    volumes:
+      - mongo_data:/data/db
+    ports:
+      - "27017:27017"
+
+  bot:
+    build: .
+    container_name: node-bot
+    restart: always
+    environment:
+      MONGO_URI: mongodb://root:password@mongo:27017/
+    depends_on:
+      - mongo
+    ports:
+      - "3000:3000"
+
+volumes:
+  mongo_data:
